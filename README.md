@@ -109,7 +109,7 @@ Shared foundations such as `config`, `domain`, `security`, `context`, `router`, 
 
 - Java 21
 - Node 20+
-- PostgreSQL 16+
+- A Neon Postgres project and connection details
 
 ### 2. Configure environment files
 
@@ -120,15 +120,17 @@ Frontend example: [`frontend/.env.example`](frontend/.env.example)
 Recommended backend variables:
 
 ```env
-DB_URL=jdbc:postgresql://localhost:5432/smart_campus_hub
-DB_USERNAME=postgres
-DB_PASSWORD=postgres
+DB_URL=jdbc:postgresql://your-neon-host.neon.tech/neondb?sslmode=require&channelBinding=require
+DB_USERNAME=your_neon_username
+DB_PASSWORD=your_neon_password
 FRONTEND_BASE_URL=http://localhost:5173
 UPLOADS_DIRECTORY=./uploads
+INVITATION_EXPIRY_DAYS=7
 APP_SEED_ENABLED=true
 APP_SEED_USER_PASSWORD=User@12345
 APP_SEED_ADMIN_PASSWORD=Admin@12345
 APP_SEED_TECHNICIAN_PASSWORD=Tech@12345
+SERVER_SERVLET_SESSION_COOKIE_SECURE=false
 SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_ID=your-client-id
 SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_SECRET=your-client-secret
 ```
@@ -139,11 +141,20 @@ Frontend variable:
 VITE_API_BASE_URL=http://localhost:8080
 ```
 
-### 3. Create the PostgreSQL database
+### 3. Create a Neon database connection
 
-```sql
-CREATE DATABASE smart_campus_hub;
+1. Create a Neon project.
+2. Open `Connect` in the Neon dashboard.
+3. Copy the database host, database name, username, and password.
+4. Convert the Neon URI into Spring Boot JDBC format in [`backend/.env`](backend/.env):
+
+```env
+DB_URL=jdbc:postgresql://your-neon-host.neon.tech/neondb?sslmode=require&channelBinding=require
+DB_USERNAME=your_neon_username
+DB_PASSWORD=your_neon_password
 ```
+
+For Spring Boot, use the standard Postgres JDBC form shown above. Flyway creates the schema automatically on startup.
 
 ### 4. Run the backend
 
@@ -159,7 +170,7 @@ cd backend
 .\mvnw.cmd spring-boot:run
 ```
 
-Flyway migrations create the schema automatically at startup.
+Flyway migrations create the schema automatically in Neon at startup.
 
 ### 5. Run the frontend
 
@@ -289,4 +300,5 @@ Before using Google OAuth in Docker, replace the placeholder Google client crede
 
 - Runtime uses PostgreSQL; automated backend tests use H2 for CI portability.
 - Uploaded ticket images are stored in the configured uploads directory and ignored by Git.
+- When multiple teammates point their backends to the same Neon database, CRUD data is shared, but uploaded files in `./uploads` are still local to each machine.
 - No secrets are committed. Use local `.env` files or deployment environment variables.
