@@ -1,0 +1,30 @@
+# Root
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.local
+*.local
+backend/.env
+frontend/.env
+backend/.env.local
+frontend/.env.local
+
+# Backend
+backend/target/
+backend/.flattened-pom.xml
+backend/uploads/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

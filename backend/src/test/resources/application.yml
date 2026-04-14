@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:smartcampus;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+app:
+  frontend-base-url: http://localhost:5173
+  csrf-cookie-name: XSRF-TOKEN
+  uploads-directory: ./build/test-uploads
+  invitation-expiry-days: 7
+  seed:
+    enabled: false
+  cors:
+    allowed-origins:
+      - http://localhost:5173
