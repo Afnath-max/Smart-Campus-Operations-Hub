@@ -95,7 +95,9 @@ export function ProfileMenu({ user, compact = false }) {
   return (
     <div
       ref={containerRef}
-      className={`relative shrink-0 ${compact ? 'w-auto min-[520px]:w-[12.5rem] xl:w-[15rem]' : 'w-full max-w-[18rem]'}`}
+      className={`relative shrink-0 ${open ? 'z-50' : 'z-10'} ${
+        compact ? 'w-auto min-[520px]:w-[12.5rem] xl:w-[15rem]' : 'w-full max-w-[18rem]'
+      }`}
     >
       <button
         type="button"
@@ -131,7 +133,7 @@ export function ProfileMenu({ user, compact = false }) {
         <div
           role="menu"
           aria-label="User menu"
-          className={`panel absolute right-0 top-[calc(100%+0.75rem)] z-30 max-w-[calc(100vw-2rem)] rounded-[30px] p-3 ${
+          className={`panel absolute right-0 top-[calc(100%+0.75rem)] z-50 max-w-[calc(100vw-2rem)] rounded-[30px] p-3 ${
             compact ? 'w-[15rem] min-[520px]:w-full' : 'w-full'
           }`}
         >
