@@ -1,15 +1,15 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.tickets.controller;
 
 import com.smartcampus.operationshub.domain.TicketCategory;
 import com.smartcampus.operationshub.domain.TicketPriority;
 import com.smartcampus.operationshub.domain.TicketStatus;
-import com.smartcampus.operationshub.dto.ticket.AssignTicketRequest;
-import com.smartcampus.operationshub.dto.ticket.RejectTicketRequest;
-import com.smartcampus.operationshub.dto.ticket.TicketResponse;
-import com.smartcampus.operationshub.dto.ticket.UpdateResolutionRequest;
-import com.smartcampus.operationshub.dto.ticket.UpdateTicketStatusRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.AssignTicketRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.RejectTicketRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketResponse;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.UpdateResolutionRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.UpdateTicketStatusRequest;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.TicketService;
+import com.smartcampus.operationshub.features.tickets.service.TicketService;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.UUID;
@@ -77,3 +77,4 @@ public class AdminTicketController {
         return ResponseEntity.noContent().build();
     }
 }
+

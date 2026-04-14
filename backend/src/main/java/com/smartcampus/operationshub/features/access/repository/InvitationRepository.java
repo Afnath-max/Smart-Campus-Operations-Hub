@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.access.repository;
 
 import com.smartcampus.operationshub.domain.Invitation;
 import com.smartcampus.operationshub.domain.InvitationStatus;
@@ -16,3 +16,4 @@ public interface InvitationRepository extends JpaRepository<Invitation, UUID> {
 
     List<Invitation> findAllByOrderByCreatedAtDesc();
 }
+

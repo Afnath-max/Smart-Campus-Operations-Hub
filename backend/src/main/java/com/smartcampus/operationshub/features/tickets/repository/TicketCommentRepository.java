@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.tickets.repository;
 
 import com.smartcampus.operationshub.domain.TicketComment;
 import java.util.List;
@@ -11,3 +11,4 @@ public interface TicketCommentRepository extends JpaRepository<TicketComment, UU
 
     long countByTicketId(UUID ticketId);
 }
+

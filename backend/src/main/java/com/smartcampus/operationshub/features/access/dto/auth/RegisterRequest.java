@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.auth;
+package com.smartcampus.operationshub.features.access.dto.auth;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -16,3 +16,4 @@ public record RegisterRequest(
                 message = "Password must contain uppercase, lowercase, number, and special character")
                 String password) {
 }
+

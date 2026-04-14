@@ -12,3 +12,4 @@ public record ApiErrorResponse(
         String path,
         Map<String, String> fieldErrors) {
 }
+

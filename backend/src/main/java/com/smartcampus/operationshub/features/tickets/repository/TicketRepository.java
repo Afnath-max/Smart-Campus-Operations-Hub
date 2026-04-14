@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.tickets.repository;
 
 import com.smartcampus.operationshub.domain.Ticket;
 import com.smartcampus.operationshub.domain.TicketStatus;
@@ -18,3 +18,4 @@ public interface TicketRepository extends JpaRepository<Ticket, UUID>, JpaSpecif
 
     Optional<Ticket> findByIdAndReporterId(UUID id, UUID reporterId);
 }
+

@@ -97,3 +97,4 @@ public class Invitation extends BaseEntity {
         this.expiresAt = expiresAt;
     }
 }
+

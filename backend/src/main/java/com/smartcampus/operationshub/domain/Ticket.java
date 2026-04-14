@@ -158,3 +158,4 @@ public class Ticket extends BaseEntity {
         this.resolvedAt = resolvedAt;
     }
 }
+

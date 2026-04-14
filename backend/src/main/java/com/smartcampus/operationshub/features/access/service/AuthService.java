@@ -1,20 +1,20 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.access.service;
 
 import com.smartcampus.operationshub.domain.AccountStatus;
 import com.smartcampus.operationshub.domain.AuthProviderType;
 import com.smartcampus.operationshub.domain.InvitationStatus;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.auth.AuthSessionResponse;
-import com.smartcampus.operationshub.dto.auth.LinkGoogleStartResponse;
-import com.smartcampus.operationshub.dto.auth.LoginRequest;
-import com.smartcampus.operationshub.dto.auth.RegisterRequest;
-import com.smartcampus.operationshub.dto.user.UserSummaryResponse;
+import com.smartcampus.operationshub.features.access.dto.auth.AuthSessionResponse;
+import com.smartcampus.operationshub.features.access.dto.auth.LinkGoogleStartResponse;
+import com.smartcampus.operationshub.features.access.dto.auth.LoginRequest;
+import com.smartcampus.operationshub.features.access.dto.auth.RegisterRequest;
+import com.smartcampus.operationshub.features.access.dto.user.UserSummaryResponse;
 import com.smartcampus.operationshub.exception.BadRequestException;
 import com.smartcampus.operationshub.exception.ConflictException;
 import com.smartcampus.operationshub.mapper.UserResponseMapper;
-import com.smartcampus.operationshub.repository.InvitationRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.repository.InvitationRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import com.smartcampus.operationshub.security.UserPrincipal;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -167,3 +167,4 @@ public class AuthService {
         };
     }
 }
+

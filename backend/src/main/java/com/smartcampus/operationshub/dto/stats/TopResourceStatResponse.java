@@ -13,3 +13,4 @@ public record TopResourceStatResponse(
         long pendingRequests,
         long projectedAttendees) {
 }
+

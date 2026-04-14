@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.ticket;
+package com.smartcampus.operationshub.features.tickets.dto.ticket;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -11,3 +11,4 @@ public record TicketImageResponse(
         String contentUrl,
         Instant createdAt) {
 }
+

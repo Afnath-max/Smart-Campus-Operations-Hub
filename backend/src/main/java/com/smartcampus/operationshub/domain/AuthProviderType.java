@@ -13,3 +13,4 @@ public enum AuthProviderType {
         return this == GOOGLE || this == BOTH;
     }
 }
+

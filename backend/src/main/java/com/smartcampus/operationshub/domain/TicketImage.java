@@ -95,3 +95,4 @@ public class TicketImage extends BaseEntity {
         this.sizeBytes = sizeBytes;
     }
 }
+

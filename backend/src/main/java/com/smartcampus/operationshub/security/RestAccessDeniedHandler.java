@@ -41,3 +41,4 @@ public class RestAccessDeniedHandler implements AccessDeniedHandler {
                         Map.of()));
     }
 }
+

@@ -1,9 +1,9 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.tickets.controller;
 
 import com.smartcampus.operationshub.domain.TicketStatus;
-import com.smartcampus.operationshub.dto.ticket.TicketResponse;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketResponse;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.TicketService;
+import com.smartcampus.operationshub.features.tickets.service.TicketService;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -31,3 +31,4 @@ public class TechnicianTicketController {
         return ResponseEntity.ok(ticketService.getAssignedTickets(principal, status));
     }
 }
+

@@ -1,11 +1,11 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.access.controller;
 
-import com.smartcampus.operationshub.dto.auth.AuthSessionResponse;
-import com.smartcampus.operationshub.dto.auth.LinkGoogleStartResponse;
-import com.smartcampus.operationshub.dto.auth.LoginRequest;
-import com.smartcampus.operationshub.dto.auth.RegisterRequest;
+import com.smartcampus.operationshub.features.access.dto.auth.AuthSessionResponse;
+import com.smartcampus.operationshub.features.access.dto.auth.LinkGoogleStartResponse;
+import com.smartcampus.operationshub.features.access.dto.auth.LoginRequest;
+import com.smartcampus.operationshub.features.access.dto.auth.RegisterRequest;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.AuthService;
+import com.smartcampus.operationshub.features.access.service.AuthService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
@@ -65,3 +65,4 @@ public class AuthController {
         return ResponseEntity.ok(authService.beginGoogleLink(principal, session));
     }
 }
+

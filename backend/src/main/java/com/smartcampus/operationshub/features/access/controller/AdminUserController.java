@@ -1,14 +1,14 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.access.controller;
 
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.admin.CreateInvitationRequest;
-import com.smartcampus.operationshub.dto.admin.UpdateAuthProviderRequest;
-import com.smartcampus.operationshub.dto.admin.UpdateRoleRequest;
-import com.smartcampus.operationshub.dto.admin.UpdateStatusRequest;
-import com.smartcampus.operationshub.dto.user.InvitationResponse;
-import com.smartcampus.operationshub.dto.user.UserDetailResponse;
+import com.smartcampus.operationshub.features.access.dto.admin.CreateInvitationRequest;
+import com.smartcampus.operationshub.features.access.dto.admin.UpdateAuthProviderRequest;
+import com.smartcampus.operationshub.features.access.dto.admin.UpdateRoleRequest;
+import com.smartcampus.operationshub.features.access.dto.admin.UpdateStatusRequest;
+import com.smartcampus.operationshub.features.access.dto.user.InvitationResponse;
+import com.smartcampus.operationshub.features.access.dto.user.UserDetailResponse;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.AdminUserService;
+import com.smartcampus.operationshub.features.access.service.AdminUserService;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.UUID;
@@ -91,3 +91,4 @@ public class AdminUserController {
         return ResponseEntity.ok(adminUserService.listInvitations());
     }
 }
+

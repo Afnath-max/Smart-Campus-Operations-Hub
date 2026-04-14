@@ -28,3 +28,4 @@ public class OAuth2LoginFailureHandler implements AuthenticationFailureHandler {
         response.sendRedirect(appProperties.getFrontendBaseUrl() + "/oauth/callback?status=error&message=" + encodedMessage);
     }
 }
+

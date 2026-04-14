@@ -1,9 +1,9 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.tickets.controller;
 
-import com.smartcampus.operationshub.dto.ticket.TicketCommentResponse;
-import com.smartcampus.operationshub.dto.ticket.UpdateTicketCommentRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketCommentResponse;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.UpdateTicketCommentRequest;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.TicketService;
+import com.smartcampus.operationshub.features.tickets.service.TicketService;
 import jakarta.validation.Valid;
 import java.util.UUID;
 import org.springframework.http.ResponseEntity;
@@ -40,3 +40,4 @@ public class CommentController {
         return ResponseEntity.noContent().build();
     }
 }
+

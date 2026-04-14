@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.access.repository;
 
 import com.smartcampus.operationshub.domain.AccountStatus;
 import com.smartcampus.operationshub.domain.User;
@@ -26,3 +26,4 @@ public interface UserRepository extends JpaRepository<User, UUID> {
 
     long countByRoleAndAccountStatus(UserRole role, AccountStatus accountStatus);
 }
+

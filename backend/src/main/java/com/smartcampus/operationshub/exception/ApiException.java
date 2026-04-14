@@ -21,3 +21,4 @@ public abstract class ApiException extends RuntimeException {
         return code;
     }
 }
+

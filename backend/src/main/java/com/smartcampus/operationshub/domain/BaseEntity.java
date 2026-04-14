@@ -35,3 +35,4 @@ public abstract class BaseEntity {
         return updatedAt;
     }
 }
+

@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.resource;
+package com.smartcampus.operationshub.features.resources.dto.resource;
 
 import com.smartcampus.operationshub.domain.ResourceStatus;
 import com.smartcampus.operationshub.domain.ResourceType;
@@ -24,3 +24,4 @@ public record UpsertResourceRequest(
         return availableFrom != null && availableTo != null && availableFrom.isBefore(availableTo);
     }
 }
+

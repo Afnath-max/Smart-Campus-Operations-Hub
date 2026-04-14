@@ -11,3 +11,4 @@ public interface FileStorageService {
 
     void delete(String storagePath);
 }
+

@@ -78,3 +78,4 @@ public class NotificationPreference extends BaseEntity {
         this.ticketCommentEnabled = ticketCommentEnabled;
     }
 }
+

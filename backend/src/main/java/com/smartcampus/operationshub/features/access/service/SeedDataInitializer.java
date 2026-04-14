@@ -1,11 +1,11 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.access.service;
 
 import com.smartcampus.operationshub.config.AppProperties;
 import com.smartcampus.operationshub.domain.AccountStatus;
 import com.smartcampus.operationshub.domain.AuthProviderType;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -66,3 +66,4 @@ public class SeedDataInitializer implements ApplicationRunner {
         userRepository.save(user);
     }
 }
+

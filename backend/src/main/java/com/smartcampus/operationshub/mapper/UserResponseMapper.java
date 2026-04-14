@@ -2,9 +2,9 @@ package com.smartcampus.operationshub.mapper;
 
 import com.smartcampus.operationshub.domain.Invitation;
 import com.smartcampus.operationshub.domain.User;
-import com.smartcampus.operationshub.dto.user.InvitationResponse;
-import com.smartcampus.operationshub.dto.user.UserDetailResponse;
-import com.smartcampus.operationshub.dto.user.UserSummaryResponse;
+import com.smartcampus.operationshub.features.access.dto.user.InvitationResponse;
+import com.smartcampus.operationshub.features.access.dto.user.UserDetailResponse;
+import com.smartcampus.operationshub.features.access.dto.user.UserSummaryResponse;
 import com.smartcampus.operationshub.security.UserPrincipal;
 
 public final class UserResponseMapper {
@@ -65,3 +65,4 @@ public final class UserResponseMapper {
                 invitation.getCreatedAt());
     }
 }
+

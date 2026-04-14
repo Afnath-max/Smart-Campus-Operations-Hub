@@ -1,13 +1,13 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.resources.service;
 
 import com.smartcampus.operationshub.domain.Resource;
 import com.smartcampus.operationshub.domain.ResourceStatus;
 import com.smartcampus.operationshub.domain.ResourceType;
-import com.smartcampus.operationshub.dto.resource.ResourceResponse;
-import com.smartcampus.operationshub.dto.resource.UpdateResourceStatusRequest;
-import com.smartcampus.operationshub.dto.resource.UpsertResourceRequest;
+import com.smartcampus.operationshub.features.resources.dto.resource.ResourceResponse;
+import com.smartcampus.operationshub.features.resources.dto.resource.UpdateResourceStatusRequest;
+import com.smartcampus.operationshub.features.resources.dto.resource.UpsertResourceRequest;
 import com.smartcampus.operationshub.exception.NotFoundException;
-import com.smartcampus.operationshub.repository.ResourceRepository;
+import com.smartcampus.operationshub.features.resources.repository.ResourceRepository;
 import jakarta.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
@@ -126,3 +126,4 @@ public class ResourceService {
                 resource.getUpdatedAt());
     }
 }
+

@@ -47,3 +47,4 @@ public class AdminStatsController {
         return ResponseEntity.ok(analyticsService.getSlaStats());
     }
 }
+

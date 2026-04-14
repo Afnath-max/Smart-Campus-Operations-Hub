@@ -3,7 +3,7 @@ package com.smartcampus.operationshub.security;
 import com.smartcampus.operationshub.config.AppProperties;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.exception.ApiException;
-import com.smartcampus.operationshub.service.OAuthAccountService;
+import com.smartcampus.operationshub.features.access.service.OAuthAccountService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -74,3 +74,4 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
         return value == null ? null : value.toString();
     }
 }
+

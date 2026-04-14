@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.booking;
+package com.smartcampus.operationshub.features.bookings.dto.booking;
 
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.Min;
@@ -22,3 +22,4 @@ public record CreateBookingRequest(
         return startTime != null && endTime != null && startTime.isBefore(endTime);
     }
 }
+

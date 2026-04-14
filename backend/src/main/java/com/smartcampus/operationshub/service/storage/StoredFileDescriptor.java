@@ -7,3 +7,4 @@ public record StoredFileDescriptor(
         String contentType,
         long sizeBytes) {
 }
+

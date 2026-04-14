@@ -11,3 +11,4 @@ public record OverviewStatsResponse(
         long openTickets,
         double averageResolutionHours) {
 }
+

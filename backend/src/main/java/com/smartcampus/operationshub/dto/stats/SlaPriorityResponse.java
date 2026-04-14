@@ -8,3 +8,4 @@ public record SlaPriorityResponse(
         long breached,
         double averageResolutionHours) {
 }
+

@@ -8,3 +8,4 @@ public class NotFoundException extends ApiException {
         super(HttpStatus.NOT_FOUND, code, message);
     }
 }
+

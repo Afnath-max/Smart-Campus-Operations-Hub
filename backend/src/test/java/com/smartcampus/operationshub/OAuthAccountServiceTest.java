@@ -9,10 +9,10 @@ import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
 import com.smartcampus.operationshub.exception.ConflictException;
 import com.smartcampus.operationshub.exception.ForbiddenException;
-import com.smartcampus.operationshub.repository.BookingRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
-import com.smartcampus.operationshub.service.AuthService;
-import com.smartcampus.operationshub.service.OAuthAccountService;
+import com.smartcampus.operationshub.features.bookings.repository.BookingRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.service.AuthService;
+import com.smartcampus.operationshub.features.access.service.OAuthAccountService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -178,3 +178,4 @@ class OAuthAccountServiceTest {
         assertEquals("google-id-999", linkedUser.getGoogleId());
     }
 }
+

@@ -11,3 +11,4 @@ public record BookingStatsResponse(
         List<MetricPointResponse> statusBreakdown,
         List<MetricPointResponse> dailyVolume) {
 }
+

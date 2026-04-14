@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.notification;
+package com.smartcampus.operationshub.features.notifications.dto.notification;
 
 import com.smartcampus.operationshub.domain.NotificationType;
 import java.time.Instant;
@@ -14,3 +14,4 @@ public record NotificationResponse(
         Instant readAt,
         Instant createdAt) {
 }
+

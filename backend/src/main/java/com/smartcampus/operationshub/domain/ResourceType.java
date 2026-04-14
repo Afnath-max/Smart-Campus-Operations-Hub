@@ -6,3 +6,4 @@ public enum ResourceType {
     MEETING_ROOM,
     EQUIPMENT
 }
+

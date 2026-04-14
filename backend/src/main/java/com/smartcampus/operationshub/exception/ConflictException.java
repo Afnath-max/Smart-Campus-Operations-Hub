@@ -8,3 +8,4 @@ public class ConflictException extends ApiException {
         super(HttpStatus.CONFLICT, code, message);
     }
 }
+

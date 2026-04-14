@@ -118,3 +118,4 @@ public class Resource extends BaseEntity {
         this.status = status;
     }
 }
+

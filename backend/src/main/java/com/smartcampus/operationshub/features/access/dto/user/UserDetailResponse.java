@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.user;
+package com.smartcampus.operationshub.features.access.dto.user;
 
 import com.smartcampus.operationshub.domain.AccountStatus;
 import com.smartcampus.operationshub.domain.AuthProviderType;
@@ -19,3 +19,4 @@ public record UserDetailResponse(
         Instant createdAt,
         Instant updatedAt) {
 }
+

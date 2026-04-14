@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.notifications.repository;
 
 import com.smartcampus.operationshub.domain.Notification;
 import java.util.List;
@@ -22,3 +22,4 @@ public interface NotificationRepository extends JpaRepository<Notification, UUID
     @Query("update Notification n set n.readAt = :readAt where n.user.id = :userId and n.readAt is null")
     int markAllAsRead(UUID userId, java.time.Instant readAt);
 }
+

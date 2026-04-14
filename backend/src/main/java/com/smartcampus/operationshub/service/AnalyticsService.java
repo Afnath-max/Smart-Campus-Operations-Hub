@@ -18,10 +18,10 @@ import com.smartcampus.operationshub.dto.stats.SlaPriorityResponse;
 import com.smartcampus.operationshub.dto.stats.SlaStatsResponse;
 import com.smartcampus.operationshub.dto.stats.TicketStatsResponse;
 import com.smartcampus.operationshub.dto.stats.TopResourceStatResponse;
-import com.smartcampus.operationshub.repository.BookingRepository;
-import com.smartcampus.operationshub.repository.ResourceRepository;
-import com.smartcampus.operationshub.repository.TicketRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.bookings.repository.BookingRepository;
+import com.smartcampus.operationshub.features.resources.repository.ResourceRepository;
+import com.smartcampus.operationshub.features.tickets.repository.TicketRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
@@ -323,3 +323,4 @@ public class AnalyticsService {
         }
     }
 }
+

@@ -134,3 +134,4 @@ public class Booking extends BaseEntity {
         this.statusReason = statusReason == null ? null : statusReason.trim();
     }
 }
+

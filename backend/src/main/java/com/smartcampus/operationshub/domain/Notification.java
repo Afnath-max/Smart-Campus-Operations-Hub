@@ -110,3 +110,4 @@ public class Notification extends BaseEntity {
         this.readAt = readAt;
     }
 }
+

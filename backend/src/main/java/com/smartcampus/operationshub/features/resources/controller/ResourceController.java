@@ -1,11 +1,11 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.resources.controller;
 
 import com.smartcampus.operationshub.domain.ResourceStatus;
 import com.smartcampus.operationshub.domain.ResourceType;
-import com.smartcampus.operationshub.dto.resource.ResourceResponse;
-import com.smartcampus.operationshub.dto.resource.UpdateResourceStatusRequest;
-import com.smartcampus.operationshub.dto.resource.UpsertResourceRequest;
-import com.smartcampus.operationshub.service.ResourceService;
+import com.smartcampus.operationshub.features.resources.dto.resource.ResourceResponse;
+import com.smartcampus.operationshub.features.resources.dto.resource.UpdateResourceStatusRequest;
+import com.smartcampus.operationshub.features.resources.dto.resource.UpsertResourceRequest;
+import com.smartcampus.operationshub.features.resources.service.ResourceService;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.UUID;
@@ -69,3 +69,4 @@ public class ResourceController {
         return ResponseEntity.noContent().build();
     }
 }
+

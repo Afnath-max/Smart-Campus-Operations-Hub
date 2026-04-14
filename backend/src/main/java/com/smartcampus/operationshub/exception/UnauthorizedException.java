@@ -8,3 +8,4 @@ public class UnauthorizedException extends ApiException {
         super(HttpStatus.UNAUTHORIZED, code, message);
     }
 }
+

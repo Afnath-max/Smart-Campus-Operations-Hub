@@ -53,3 +53,4 @@ public class QrCodeService {
         return svg.toString();
     }
 }
+

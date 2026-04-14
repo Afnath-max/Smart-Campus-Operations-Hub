@@ -10,8 +10,8 @@ import static org.mockito.Mockito.when;
 import com.smartcampus.operationshub.config.AppProperties;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.repository.UserRepository;
-import com.smartcampus.operationshub.service.SeedDataInitializer;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.service.SeedDataInitializer;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -78,3 +78,4 @@ class SeedDataInitializerTest {
         verify(userRepository, never()).save(any());
     }
 }
+

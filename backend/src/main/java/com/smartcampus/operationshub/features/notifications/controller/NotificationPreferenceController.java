@@ -1,9 +1,9 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.notifications.controller;
 
-import com.smartcampus.operationshub.dto.notification.NotificationPreferencesResponse;
-import com.smartcampus.operationshub.dto.notification.UpdateNotificationPreferencesRequest;
+import com.smartcampus.operationshub.features.notifications.dto.notification.NotificationPreferencesResponse;
+import com.smartcampus.operationshub.features.notifications.dto.notification.UpdateNotificationPreferencesRequest;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.NotificationService;
+import com.smartcampus.operationshub.features.notifications.service.NotificationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,3 +35,4 @@ public class NotificationPreferenceController {
         return ResponseEntity.ok(notificationService.updatePreferences(principal, request));
     }
 }
+

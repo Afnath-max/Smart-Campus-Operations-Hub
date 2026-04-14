@@ -6,3 +6,4 @@ public enum TicketCategory {
     NETWORK,
     OTHER
 }
+

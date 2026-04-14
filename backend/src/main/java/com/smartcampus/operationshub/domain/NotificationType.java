@@ -8,3 +8,4 @@ public enum NotificationType {
     TICKET_STATUS_CHANGED,
     TICKET_COMMENT
 }
+

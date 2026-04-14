@@ -2,7 +2,7 @@ package com.smartcampus.operationshub.security;
 
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.exception.UnauthorizedException;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import java.util.Locale;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -54,3 +54,4 @@ public class LocalAuthenticationProvider implements AuthenticationProvider {
         return UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication);
     }
 }
+

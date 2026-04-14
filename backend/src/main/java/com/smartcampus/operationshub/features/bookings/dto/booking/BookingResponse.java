@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.booking;
+package com.smartcampus.operationshub.features.bookings.dto.booking;
 
 import com.smartcampus.operationshub.domain.BookingStatus;
 import java.time.Instant;
@@ -22,3 +22,4 @@ public record BookingResponse(
         Instant createdAt,
         Instant updatedAt) {
 }
+

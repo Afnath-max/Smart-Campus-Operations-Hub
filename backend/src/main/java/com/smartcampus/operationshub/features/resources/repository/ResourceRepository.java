@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.resources.repository;
 
 import com.smartcampus.operationshub.domain.Resource;
 import java.util.UUID;
@@ -15,3 +15,4 @@ public interface ResourceRepository extends JpaRepository<Resource, UUID>, JpaSp
     @Query("select r from Resource r where r.id = :id")
     Optional<Resource> findByIdForUpdate(UUID id);
 }
+

@@ -1,8 +1,8 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.access.controller;
 
-import com.smartcampus.operationshub.dto.user.UserSummaryResponse;
+import com.smartcampus.operationshub.features.access.dto.user.UserSummaryResponse;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.AuthService;
+import com.smartcampus.operationshub.features.access.service.AuthService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,3 +24,4 @@ public class UserController {
         return ResponseEntity.ok(authService.currentUser(principal));
     }
 }
+

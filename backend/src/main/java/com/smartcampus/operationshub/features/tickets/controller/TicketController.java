@@ -1,14 +1,14 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.tickets.controller;
 
-import com.smartcampus.operationshub.dto.ticket.CreateTicketCommentRequest;
-import com.smartcampus.operationshub.dto.ticket.CreateTicketRequest;
-import com.smartcampus.operationshub.dto.ticket.TicketCommentResponse;
-import com.smartcampus.operationshub.dto.ticket.TicketImageContent;
-import com.smartcampus.operationshub.dto.ticket.TicketImageResponse;
-import com.smartcampus.operationshub.dto.ticket.TicketResponse;
-import com.smartcampus.operationshub.dto.ticket.UpdateTicketStatusRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.CreateTicketCommentRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.CreateTicketRequest;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketCommentResponse;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketImageContent;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketImageResponse;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.TicketResponse;
+import com.smartcampus.operationshub.features.tickets.dto.ticket.UpdateTicketStatusRequest;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.TicketService;
+import com.smartcampus.operationshub.features.tickets.service.TicketService;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.UUID;
@@ -99,3 +99,4 @@ public class TicketController {
         return ResponseEntity.ok(ticketService.updateTicketStatus(id, principal, request));
     }
 }
+

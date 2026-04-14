@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.admin;
+package com.smartcampus.operationshub.features.access.dto.admin;
 
 import com.smartcampus.operationshub.domain.AuthProviderType;
 import jakarta.validation.constraints.Email;
@@ -13,3 +13,4 @@ public record CreateInvitationRequest(
         @NotNull AuthProviderType authProviderType,
         @Size(min = 8, max = 120) String initialPassword) {
 }
+

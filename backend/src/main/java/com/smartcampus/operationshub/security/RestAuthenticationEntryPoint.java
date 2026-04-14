@@ -41,3 +41,4 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
                         Map.of()));
     }
 }
+

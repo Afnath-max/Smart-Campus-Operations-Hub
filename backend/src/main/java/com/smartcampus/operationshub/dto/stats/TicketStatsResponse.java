@@ -13,3 +13,4 @@ public record TicketStatsResponse(
         List<MetricPointResponse> priorityBreakdown,
         List<MetricPointResponse> categoryBreakdown) {
 }
+

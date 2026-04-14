@@ -1,9 +1,9 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.notifications.controller;
 
-import com.smartcampus.operationshub.dto.notification.NotificationResponse;
-import com.smartcampus.operationshub.dto.notification.UnreadCountResponse;
+import com.smartcampus.operationshub.features.notifications.dto.notification.NotificationResponse;
+import com.smartcampus.operationshub.features.notifications.dto.notification.UnreadCountResponse;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.NotificationService;
+import com.smartcampus.operationshub.features.notifications.service.NotificationService;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.http.ResponseEntity;
@@ -54,3 +54,4 @@ public class NotificationController {
         return ResponseEntity.noContent().build();
     }
 }
+

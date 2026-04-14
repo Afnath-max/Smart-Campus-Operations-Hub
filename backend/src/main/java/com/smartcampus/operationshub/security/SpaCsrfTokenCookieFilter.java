@@ -21,3 +21,4 @@ public class SpaCsrfTokenCookieFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 }
+

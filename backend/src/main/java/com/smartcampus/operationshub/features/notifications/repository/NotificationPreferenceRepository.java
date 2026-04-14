@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.notifications.repository;
 
 import com.smartcampus.operationshub.domain.NotificationPreference;
 import java.util.Optional;
@@ -9,3 +9,4 @@ public interface NotificationPreferenceRepository extends JpaRepository<Notifica
 
     Optional<NotificationPreference> findByUserId(UUID userId);
 }
+

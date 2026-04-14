@@ -20,15 +20,15 @@ import com.smartcampus.operationshub.domain.TicketPriority;
 import com.smartcampus.operationshub.domain.TicketStatus;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.auth.LoginRequest;
-import com.smartcampus.operationshub.repository.BookingRepository;
-import com.smartcampus.operationshub.repository.NotificationPreferenceRepository;
-import com.smartcampus.operationshub.repository.NotificationRepository;
-import com.smartcampus.operationshub.repository.ResourceRepository;
-import com.smartcampus.operationshub.repository.TicketCommentRepository;
-import com.smartcampus.operationshub.repository.TicketImageRepository;
-import com.smartcampus.operationshub.repository.TicketRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.dto.auth.LoginRequest;
+import com.smartcampus.operationshub.features.bookings.repository.BookingRepository;
+import com.smartcampus.operationshub.features.notifications.repository.NotificationPreferenceRepository;
+import com.smartcampus.operationshub.features.notifications.repository.NotificationRepository;
+import com.smartcampus.operationshub.features.resources.repository.ResourceRepository;
+import com.smartcampus.operationshub.features.tickets.repository.TicketCommentRepository;
+import com.smartcampus.operationshub.features.tickets.repository.TicketImageRepository;
+import com.smartcampus.operationshub.features.tickets.repository.TicketRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -217,3 +217,4 @@ class AdminAnalyticsIntegrationTest {
         return userRepository.save(user);
     }
 }
+

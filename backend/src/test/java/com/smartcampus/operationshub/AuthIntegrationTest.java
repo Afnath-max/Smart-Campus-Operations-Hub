@@ -12,11 +12,11 @@ import com.smartcampus.operationshub.domain.AccountStatus;
 import com.smartcampus.operationshub.domain.AuthProviderType;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.auth.LoginRequest;
-import com.smartcampus.operationshub.dto.auth.RegisterRequest;
-import com.smartcampus.operationshub.repository.BookingRepository;
-import com.smartcampus.operationshub.repository.InvitationRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.dto.auth.LoginRequest;
+import com.smartcampus.operationshub.features.access.dto.auth.RegisterRequest;
+import com.smartcampus.operationshub.features.bookings.repository.BookingRepository;
+import com.smartcampus.operationshub.features.access.repository.InvitationRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -235,3 +235,4 @@ class AuthIntegrationTest {
         userRepository.save(user);
     }
 }
+

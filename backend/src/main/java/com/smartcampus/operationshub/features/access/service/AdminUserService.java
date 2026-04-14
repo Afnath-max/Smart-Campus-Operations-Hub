@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.access.service;
 
 import com.smartcampus.operationshub.config.AppProperties;
 import com.smartcampus.operationshub.domain.AccountStatus;
@@ -7,16 +7,16 @@ import com.smartcampus.operationshub.domain.Invitation;
 import com.smartcampus.operationshub.domain.InvitationStatus;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.admin.CreateInvitationRequest;
-import com.smartcampus.operationshub.dto.admin.UpdateAuthProviderRequest;
-import com.smartcampus.operationshub.dto.user.InvitationResponse;
-import com.smartcampus.operationshub.dto.user.UserDetailResponse;
+import com.smartcampus.operationshub.features.access.dto.admin.CreateInvitationRequest;
+import com.smartcampus.operationshub.features.access.dto.admin.UpdateAuthProviderRequest;
+import com.smartcampus.operationshub.features.access.dto.user.InvitationResponse;
+import com.smartcampus.operationshub.features.access.dto.user.UserDetailResponse;
 import com.smartcampus.operationshub.exception.BadRequestException;
 import com.smartcampus.operationshub.exception.ConflictException;
 import com.smartcampus.operationshub.exception.NotFoundException;
 import com.smartcampus.operationshub.mapper.UserResponseMapper;
-import com.smartcampus.operationshub.repository.InvitationRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.repository.InvitationRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import com.smartcampus.operationshub.security.UserPrincipal;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -237,3 +237,4 @@ public class AdminUserService {
         return value == null ? null : value.trim().toLowerCase(Locale.ROOT);
     }
 }
+

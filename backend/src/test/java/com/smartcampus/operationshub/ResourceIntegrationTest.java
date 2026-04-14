@@ -15,12 +15,12 @@ import com.smartcampus.operationshub.domain.ResourceStatus;
 import com.smartcampus.operationshub.domain.ResourceType;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.auth.LoginRequest;
-import com.smartcampus.operationshub.dto.resource.UpdateResourceStatusRequest;
-import com.smartcampus.operationshub.dto.resource.UpsertResourceRequest;
-import com.smartcampus.operationshub.repository.BookingRepository;
-import com.smartcampus.operationshub.repository.ResourceRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.dto.auth.LoginRequest;
+import com.smartcampus.operationshub.features.resources.dto.resource.UpdateResourceStatusRequest;
+import com.smartcampus.operationshub.features.resources.dto.resource.UpsertResourceRequest;
+import com.smartcampus.operationshub.features.bookings.repository.BookingRepository;
+import com.smartcampus.operationshub.features.resources.repository.ResourceRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import java.time.LocalTime;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -166,3 +166,4 @@ class ResourceIntegrationTest {
         resourceRepository.save(resource);
     }
 }
+

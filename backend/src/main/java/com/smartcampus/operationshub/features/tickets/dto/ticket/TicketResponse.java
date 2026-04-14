@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.dto.ticket;
+package com.smartcampus.operationshub.features.tickets.dto.ticket;
 
 import com.smartcampus.operationshub.domain.TicketCategory;
 import com.smartcampus.operationshub.domain.TicketPriority;
@@ -27,3 +27,4 @@ public record TicketResponse(
         Instant createdAt,
         Instant updatedAt) {
 }
+

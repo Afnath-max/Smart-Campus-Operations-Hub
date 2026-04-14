@@ -146,3 +146,4 @@ public class User extends BaseEntity {
         return value == null ? null : value.trim().toLowerCase(Locale.ROOT);
     }
 }
+

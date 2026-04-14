@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.bookings.repository;
 
 import com.smartcampus.operationshub.domain.Booking;
 import com.smartcampus.operationshub.domain.BookingStatus;
@@ -35,3 +35,4 @@ public interface BookingRepository extends JpaRepository<Booking, UUID>, JpaSpec
 
     Optional<Booking> findByIdAndUserId(UUID id, UUID userId);
 }
+

@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.repository;
+package com.smartcampus.operationshub.features.tickets.repository;
 
 import com.smartcampus.operationshub.domain.TicketImage;
 import java.util.List;
@@ -14,3 +14,4 @@ public interface TicketImageRepository extends JpaRepository<TicketImage, UUID> 
 
     Optional<TicketImage> findByIdAndTicketId(UUID id, UUID ticketId);
 }
+

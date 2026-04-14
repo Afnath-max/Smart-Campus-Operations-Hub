@@ -63,3 +63,4 @@ public class TicketComment extends BaseEntity {
         this.content = content == null ? null : content.trim();
     }
 }
+

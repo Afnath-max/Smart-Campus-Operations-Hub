@@ -1,17 +1,17 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.notifications.service;
 
 import com.smartcampus.operationshub.domain.Notification;
 import com.smartcampus.operationshub.domain.NotificationPreference;
 import com.smartcampus.operationshub.domain.NotificationType;
 import com.smartcampus.operationshub.domain.User;
-import com.smartcampus.operationshub.dto.notification.NotificationPreferencesResponse;
-import com.smartcampus.operationshub.dto.notification.NotificationResponse;
-import com.smartcampus.operationshub.dto.notification.UnreadCountResponse;
-import com.smartcampus.operationshub.dto.notification.UpdateNotificationPreferencesRequest;
+import com.smartcampus.operationshub.features.notifications.dto.notification.NotificationPreferencesResponse;
+import com.smartcampus.operationshub.features.notifications.dto.notification.NotificationResponse;
+import com.smartcampus.operationshub.features.notifications.dto.notification.UnreadCountResponse;
+import com.smartcampus.operationshub.features.notifications.dto.notification.UpdateNotificationPreferencesRequest;
 import com.smartcampus.operationshub.exception.NotFoundException;
-import com.smartcampus.operationshub.repository.NotificationPreferenceRepository;
-import com.smartcampus.operationshub.repository.NotificationRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.notifications.repository.NotificationPreferenceRepository;
+import com.smartcampus.operationshub.features.notifications.repository.NotificationRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import com.smartcampus.operationshub.security.UserPrincipal;
 import java.time.Instant;
 import java.util.List;
@@ -162,3 +162,4 @@ public class NotificationService {
                 preference.isTicketCommentEnabled());
     }
 }
+

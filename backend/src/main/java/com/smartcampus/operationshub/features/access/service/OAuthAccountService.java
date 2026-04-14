@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.access.service;
 
 import com.smartcampus.operationshub.domain.AccountStatus;
 import com.smartcampus.operationshub.domain.AuthProviderType;
@@ -8,7 +8,7 @@ import com.smartcampus.operationshub.exception.BadRequestException;
 import com.smartcampus.operationshub.exception.ConflictException;
 import com.smartcampus.operationshub.exception.ForbiddenException;
 import com.smartcampus.operationshub.exception.NotFoundException;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import jakarta.servlet.http.HttpSession;
 import java.util.Locale;
 import java.util.UUID;
@@ -149,3 +149,4 @@ public class OAuthAccountService {
         return campusId;
     }
 }
+

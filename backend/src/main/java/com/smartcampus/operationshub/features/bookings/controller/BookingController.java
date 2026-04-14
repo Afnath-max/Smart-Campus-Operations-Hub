@@ -1,13 +1,13 @@
-package com.smartcampus.operationshub.controller;
+package com.smartcampus.operationshub.features.bookings.controller;
 
 import com.smartcampus.operationshub.domain.BookingStatus;
-import com.smartcampus.operationshub.dto.booking.BookingAvailabilityResponse;
-import com.smartcampus.operationshub.dto.booking.BookingDecisionRequest;
-import com.smartcampus.operationshub.dto.booking.BookingResponse;
-import com.smartcampus.operationshub.dto.booking.CancelBookingRequest;
-import com.smartcampus.operationshub.dto.booking.CreateBookingRequest;
+import com.smartcampus.operationshub.features.bookings.dto.booking.BookingAvailabilityResponse;
+import com.smartcampus.operationshub.features.bookings.dto.booking.BookingDecisionRequest;
+import com.smartcampus.operationshub.features.bookings.dto.booking.BookingResponse;
+import com.smartcampus.operationshub.features.bookings.dto.booking.CancelBookingRequest;
+import com.smartcampus.operationshub.features.bookings.dto.booking.CreateBookingRequest;
 import com.smartcampus.operationshub.security.UserPrincipal;
-import com.smartcampus.operationshub.service.BookingService;
+import com.smartcampus.operationshub.features.bookings.service.BookingService;
 import jakarta.validation.Valid;
 import java.util.List;
 import java.util.UUID;
@@ -110,3 +110,4 @@ public class BookingController {
         return ResponseEntity.noContent().build();
     }
 }
+

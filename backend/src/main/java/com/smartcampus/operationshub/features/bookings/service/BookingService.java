@@ -1,4 +1,4 @@
-package com.smartcampus.operationshub.service;
+package com.smartcampus.operationshub.features.bookings.service;
 
 import com.smartcampus.operationshub.domain.Booking;
 import com.smartcampus.operationshub.domain.BookingStatus;
@@ -7,19 +7,21 @@ import com.smartcampus.operationshub.domain.Resource;
 import com.smartcampus.operationshub.domain.ResourceStatus;
 import com.smartcampus.operationshub.domain.User;
 import com.smartcampus.operationshub.domain.UserRole;
-import com.smartcampus.operationshub.dto.booking.BookingAvailabilityResponse;
-import com.smartcampus.operationshub.dto.booking.BookingDecisionRequest;
-import com.smartcampus.operationshub.dto.booking.BookingResponse;
-import com.smartcampus.operationshub.dto.booking.CancelBookingRequest;
-import com.smartcampus.operationshub.dto.booking.CreateBookingRequest;
+import com.smartcampus.operationshub.features.bookings.dto.booking.BookingAvailabilityResponse;
+import com.smartcampus.operationshub.features.bookings.dto.booking.BookingDecisionRequest;
+import com.smartcampus.operationshub.features.bookings.dto.booking.BookingResponse;
+import com.smartcampus.operationshub.features.bookings.dto.booking.CancelBookingRequest;
+import com.smartcampus.operationshub.features.bookings.dto.booking.CreateBookingRequest;
 import com.smartcampus.operationshub.exception.BadRequestException;
 import com.smartcampus.operationshub.exception.ConflictException;
 import com.smartcampus.operationshub.exception.ForbiddenException;
 import com.smartcampus.operationshub.exception.NotFoundException;
-import com.smartcampus.operationshub.repository.BookingRepository;
-import com.smartcampus.operationshub.repository.ResourceRepository;
-import com.smartcampus.operationshub.repository.UserRepository;
+import com.smartcampus.operationshub.features.bookings.repository.BookingRepository;
+import com.smartcampus.operationshub.features.notifications.service.NotificationService;
+import com.smartcampus.operationshub.features.resources.repository.ResourceRepository;
+import com.smartcampus.operationshub.features.access.repository.UserRepository;
 import com.smartcampus.operationshub.security.UserPrincipal;
+import com.smartcampus.operationshub.service.QrCodeService;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
@@ -329,3 +331,4 @@ public class BookingService {
                         booking.getStatus());
     }
 }
+

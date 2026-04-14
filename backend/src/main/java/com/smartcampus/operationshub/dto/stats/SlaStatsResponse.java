@@ -11,3 +11,4 @@ public record SlaStatsResponse(
         long activeBreached,
         List<SlaPriorityResponse> priorityBreakdown) {
 }
+
